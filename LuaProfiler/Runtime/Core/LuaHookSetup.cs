@@ -183,6 +183,7 @@ namespace MikuLuaProfiler
             Destroy(gameObject);
             UnityEditor.EditorApplication.update += WaitDestory;
 #endif
+            isInite = false;
             NetWorkMgr.Close();
         }
         

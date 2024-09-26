@@ -455,6 +455,7 @@ namespace MikuLuaProfiler
                 lua_pcallk_hook = null;
             }
 
+            m_hooked = false;
         }
 
         private static bool isBinding = false;
