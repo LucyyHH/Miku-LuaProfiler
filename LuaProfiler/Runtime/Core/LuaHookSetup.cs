@@ -92,8 +92,14 @@ namespace MikuLuaProfiler
                 return;       
             }
 #endif
-            isInite = true;
             setting = LuaDeepProfilerSetting.Instance;
+#if UNITY_EDITOR
+            if (!setting.ProfilerWinOpen)
+            {
+                return;
+            }
+#endif
+            isInite = true;
             LuaProfiler.mainThreadId = System.Threading.Thread.CurrentThread.ManagedThreadId;
             
             if (setting.isDeepLuaProfiler || !setting.isLocal)
