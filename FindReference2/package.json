@@ -1,0 +1,12 @@
+{
+  "name": "com.lc.findreference2",
+  "displayName": "Find Reference 2",
+  "version": "1.0.0",
+  "unity": "2019.4",
+  "keywords": [
+    "findreference2"
+  ],
+  "description": "find reference for unity",
+  "relatedPackages": {},
+  "repository": {}
+}
